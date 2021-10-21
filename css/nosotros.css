@@ -1,27 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'open sans';
 }
 
-.contenedor{
+.contenedor {
     padding: 60px 0;
     width: 90%;
-    max-width: 1000pix;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
 
-.titulo{
-    color: #000000;
+.titulo {
+    color: #280686;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
+
+/* Header */
 
 header{
     width: 100%;
@@ -37,52 +39,73 @@ header{
     position: relative;
 }
 
-.encabezado nav{
-    padding: 30px 50px 0px 0px;
-    text-align: right;
-}
-
-.encabezado nav ul{
-    list-style: none;
+.cont-ul{
+    text-decoration: none;
+    right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+    padding: 30px 50px 0 0;
 }
-
 a{
     text-decoration: none;
-    color: #fff;
-    font-weight: 300;
-    margin-right: 10px;
+    color:#fff;
 }
-
 a:hover{
     text-decoration: underline;
     color: #000;
 }
-
-.encabezado nav ul li ul{
-    flex-direction: column;
+li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+    color: #fff;
 }
-
-.encabezado nav ul li ul{
+li:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.ul-second{
     position: absolute;
-}
-
-.encabezado nav ul li ul li{
-    position: relative;
-}
-
-.encabezado nav ul li ul li ul{
-    top: 0;
-    left: 180px;
-    position: absolute;
-}
-
-.encabezado nav ul li ul{
     display: none;
+    transform: translateY(20px);
+    text-decoration: none;
+    color: #fff;
 }
+.ul-second >li{
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+}
+.ul-second > li:hover{
+    text-decoration: underline;
+    color: #000;
 
-.encabezado nav ul li:hover > ul{
+}
+.develop:hover > .ul-second{
+    display: block;
+}
+.ul-third{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateX(121px);
+    display: none;
+    color: #000;
+}
+.ul-third >li{
+    padding: 20px;
+    border-bottom: solid 1px #fff;
+}
+.front:hover > .ul-third{
     display: block;
 }
 
@@ -98,7 +121,7 @@ header .textos-header{
 }
 
 .textos-header h1{
-    font-size: 55px;
+    font-size: 50px;
     color: #fff;
 }
 
@@ -108,9 +131,41 @@ header .textos-header{
     width: 100%;
 }
 
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
 .contenedor-sobre-nosotros{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
     
 
